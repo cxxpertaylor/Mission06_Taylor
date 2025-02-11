@@ -10,6 +10,8 @@
 
 <br />
 
+@* form to add a movie to the collection *@
+
 <form method="post">
     <label asp-for="Category">Category: </label>
     <input asp-for="Category" required/>
@@ -32,7 +34,7 @@
     <br />
 
     <label asp-for="Rating">Rating: </label>
-    <select asp-for="Rating" required>
+    <select asp-for="Rating" required> @* Drop down for ratings *@
         <option>G</option>
         <option>PG</option>
         <option>PG-13</option>
@@ -41,7 +43,7 @@
 
     <br />
 
-    <label asp-for="Edited">Edited: </label>
+    <label asp-for="Edited">Edited: </label> @*yes/no boolean option. not a required field*@
     <select asp-for="Edited">
         <option value="true">Yes</option>
         <option value="false">No</option>
@@ -49,13 +51,13 @@
 
     <br />
     
-    <label asp-for="LentTo">Lent To: </label>
+    <label asp-for="LentTo">Lent To: </label> @*not a required field*@
     <input asp-for="LentTo" />
 
     <br />
 
     <label asp-for="Notes">Notes: </label>
-    <input asp-for="Notes" maxlength="25"/>
+    <input asp-for="Notes" maxlength="25"/> @*limited to 25 characters. not a required field*@
 
     <br />
 

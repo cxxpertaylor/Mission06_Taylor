@@ -21,7 +21,7 @@ namespace Mission06_Taylor.Controllers
             return View();
         }
 
-        [HttpGet]
+        [HttpGet] //Get methods are the default. This just renders the page. The post below is what actually sends the data from the form
         public IActionResult MovieForm()
         {
             return View();
